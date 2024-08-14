@@ -26,35 +26,27 @@
   .search-box{
     display: block;
   }
-  .single-video-preview{
+  /* .single-video-preview{
     display: inline-block;
     width: 400px;
     margin-right: 12px;
     padding: 12px 0;
-  }
+  } */
   
   .single-video-thumbnail{
-    width: 400px;
+    /* width: 400px; */
+    width: 100%;
     border-radius: 8px;
   }
-  .single-video-thumbnail:hover{
-    border-radius: 0;
-  }
-  .author-profile-picture{
-    width: 100px;
-    display: inline-block;
-    vertical-align: top;
-  }
   .author-profile-picture img{
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
+    /* width: 70px; */
+    /* height: 70px; */
+    /* width: 100%;
+    border-radius: 50%; */
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
     
-  }
-
-  .all-description{
-    width: 290px;
-    display: inline-block;
   }
   .video-title{
     margin-top: 0;
@@ -81,85 +73,96 @@
     padding: 2px;
     margin: 0;
   } */
+   .video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+   }
+   .single-video-info{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+   }
 </style>
 <body>
   <input class="search-box" type="text" placeholder="Search">
-  <div class="single-video-preview">
-    <div class="video-thumbnail">
-      <img class="single-video-thumbnail" src="thumnail/1 (1).jpg" alt="first video">
-    </div>
-    <div class="single-video-info">
-      <div class="author-profile-picture">
-        <img src="profile/1500403466_7.jpg" alt="profile picture">
+  <div class="video-grid">
+    <div class="single-video-preview">
+      <div class="video-thumbnail">
+        <img class="single-video-thumbnail" src="thumnail/1 (1).jpg" alt="first video">
       </div>
-      <div class="all-description">
-        <p class="video-title">This is youtube video title, read this title then think about this content</p>
-        <p class="video-author">shafiul basar</p>
-        <p class="video-status">3.43M view &#183 6 month ago</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="single-video-preview">
-    <div class="video-thumbnail">
-      <img class="single-video-thumbnail" src="thumnail/10 (1).jpg" alt="first video">
-    </div>
-    <div class="single-video-info">
-      <div class="author-profile-picture">
-        <img src="profile/Sakib-Khan-Bangladesh.jpg" alt="profile picture">
-      </div>
-      <div class="all-description">
-        <p class="video-title">This is youtube video title, read this title then think about this content</p>
-        <p class="video-author">shafiul basar</p>
-        <p class="video-status">3.43M view &#183 6 month ago</p>
+      <div class="single-video-info">
+        <div class="author-profile-picture">
+          <img src="profile/1500403466_7.jpg" alt="profile picture">
+        </div>
+        <div class="all-description">
+          <p class="video-title">This is youtube video title, read this title then think about this content</p>
+          <p class="video-author">shafiul basar</p>
+          <p class="video-status">3.43M view &#183 6 month ago</p>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="single-video-preview">
-    <div class="video-thumbnail">
-      <img class="single-video-thumbnail" src="thumnail/2 (2).jpg" alt="first video">
-    </div>
-    <div class="single-video-info">
-      <div class="author-profile-picture">
-        <img src="profile/sokh_0.webp" alt="profile picture">
+    
+    <div class="single-video-preview">
+      <div class="video-thumbnail">
+        <img class="single-video-thumbnail" src="thumnail/10 (1).jpg" alt="first video">
       </div>
-      <div class="all-description">
-        <p class="video-title">This is youtube video title, read this title then think about this content</p>
-        <p class="video-author">shafiul basar</p>
-        <p class="video-status">3.43M view &#183 6 month ago</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="single-video-preview">
-    <div class="video-thumbnail">
-      <img class="single-video-thumbnail" src="thumnail/3 (1).jpg" alt="first video">
-    </div>
-    <div class="single-video-info">
-      <div class="author-profile-picture">
-        <img src="profile/sourov.jpg" alt="profile picture">
-      </div>
-      <div class="all-description">
-        <p class="video-title">This is youtube video title, read this title then think about this content</p>
-        <p class="video-author">shafiul basar</p>
-        <p class="video-status">3.43M view &#183 6 month ago</p>
+      <div class="single-video-info">
+        <div class="author-profile-picture">
+          <img src="profile/Sakib-Khan-Bangladesh.jpg" alt="profile picture">
+        </div>
+        <div class="all-description">
+          <p class="video-title">This is youtube video title, read this title then think about this content</p>
+          <p class="video-author">shafiul basar</p>
+          <p class="video-status">3.43M view &#183 6 month ago</p>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="single-video-preview">
-    <div class="video-thumbnail">
-      <img class="single-video-thumbnail" src="thumnail/4 (1).jpg" alt="first video">
-    </div>
-    <div class="single-video-info">
-      <div class="author-profile-picture">
-        <img src="profile/tisha.jpg" alt="profile picture">
+    
+    <div class="single-video-preview">
+      <div class="video-thumbnail">
+        <img class="single-video-thumbnail" src="thumnail/2 (2).jpg" alt="first video">
       </div>
-      <div class="all-description">
-        <p class="video-title">This is youtube video title, read this title then think about this content</p>
-        <p class="video-author">shafiul basar</p>
-        <p class="video-status">3.43M view &#183 6 month ago</p>
+      <div class="single-video-info">
+        <div class="author-profile-picture">
+          <img src="profile/sokh_0.webp" alt="profile picture">
+        </div>
+        <div class="all-description">
+          <p class="video-title">This is youtube video title, read this title then think about this content</p>
+          <p class="video-author">shafiul basar</p>
+          <p class="video-status">3.43M view &#183 6 month ago</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="single-video-preview">
+      <div class="video-thumbnail">
+        <img class="single-video-thumbnail" src="thumnail/3 (1).jpg" alt="first video">
+      </div>
+      <div class="single-video-info">
+        <div class="author-profile-picture">
+          <img src="profile/sourov.jpg" alt="profile picture">
+        </div>
+        <div class="all-description">
+          <p class="video-title">This is youtube video title, read this title then think about this content</p>
+          <p class="video-author">shafiul basar</p>
+          <p class="video-status">3.43M view &#183 6 month ago</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="single-video-preview">
+      <div class="video-thumbnail">
+        <img class="single-video-thumbnail" src="thumnail/4 (1).jpg" alt="first video">
+      </div>
+      <div class="single-video-info">
+        <div class="author-profile-picture">
+          <img src="profile/tisha.jpg" alt="profile picture">
+        </div>
+        <div class="all-description">
+          <p class="video-title">This is youtube video title, read this title then think about this content</p>
+          <p class="video-author">shafiul basar</p>
+          <p class="video-status">3.43M view &#183 6 month ago</p>
+        </div>
       </div>
     </div>
   </div>

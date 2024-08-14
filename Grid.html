@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Tutorial</title>
+  <style>
+    .grid-1{
+
+    }
+    .grid-alignment-1{
+      display: grid;
+      grid-template-columns: 100px 100px;
+    }
+    .grid-alignment-2{
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 100px 100px 300px;
+      
+      /* text-align: center; only inside content left-right */
+      /* justify-content: center;// hole div */
+      /* margin: auto; */
+      /* grid-gap: 10px 50px; top-button  left-right */
+    }
+    .grid-alignment-3{
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 100px 1fr 1fr;
+      /* fr = free space */
+    }
+    .grid-alignment-4{
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 100px auto 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-alignment-1">
+    <div style="background-color: lightblue;" class="grid-1">Div 1</div>
+    <div style="background-color: lightcoral;" class="grid-1">Div 2 <p>Lorem ipsum dolor sit.</p></div>
+  </div>
+  <div class="grid-alignment-2">
+    <div style="background-color: lightblue;" class="grid-1">Div 1</div>
+    <div style="background-color: lightcoral;" class="grid-1">Div 2 <p>Lorem ipsum dolor sit.</p></div>
+    <div style="background-color: aqua;" class="grid-1">this is 300px div</div>
+  </div>
+
+  <div class="grid-alignment-3">
+    <div style="background-color: lightblue;" class="grid-1">Div 1 <p>it's only px value</p></div>
+    <div style="background-color: lightcoral;" class="grid-1">Div 2 for rf value
+    </div>
+    <div style="background-color: aqua;" class="grid-1">this is 300px div for rf value</div>
+  </div>
+  <div class="grid-alignment-4">
+    <div style="background-color: lightblue;" class="grid-1">Div 1 <p>it's only px value</p>
+    </div>
+    <div style="background-color: lightcoral;" class="grid-1">Div 2 for rf value
+    </div>
+    <div style="background-color: aqua;" class="grid-1">this is 300px div for rf value</div>
+    <div style="background-color: rgb(20, 118, 118);" class="grid-1">this div is <strong>wrap</strong></div>
+    <div style="background-color: rgb(213, 229, 229);" class="grid-1">this div is <strong>wrap</strong></div>
+  </div>
+</body>
+</html>
