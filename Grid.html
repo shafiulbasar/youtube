@@ -33,33 +33,53 @@
       display: grid;
       grid-template-columns: 100px auto 300px;
     }
+    .grid-alignment-5{
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 300px 1fr 2fr;
+      color: white;
+    }
   </style>
 </head>
 <body>
   <div class="grid-alignment-1">
-    <div style="background-color: lightblue;" class="grid-1">Div 1</div>
-    <div style="background-color: lightcoral;" class="grid-1">Div 2 <p>Lorem ipsum dolor sit.</p></div>
+    <div style="background-color: lightblue;" class="grid-1">Div 1 || display: grid;
+    grid-template-columns: 100px 100px;</div>
+    <div style="background-color: lightcoral;" class="grid-1">Div 2 <p>display: grid;
+    grid-template-columns: 100px 100px;</p></div>
   </div>
   <div class="grid-alignment-2">
-    <div style="background-color: lightblue;" class="grid-1">Div 1</div>
-    <div style="background-color: lightcoral;" class="grid-1">Div 2 <p>Lorem ipsum dolor sit.</p></div>
-    <div style="background-color: aqua;" class="grid-1">this is 300px div</div>
+    <div style="background-color: lightblue;" class="grid-1">Div 1 || display: grid;
+    grid-template-columns: 100px 100px 300px;</div>
+    <div style="background-color: lightcoral;" class="grid-1">Div 2 <p>|| display: grid;
+    grid-template-columns: 100px 100px 300px;</p></div>
+    <div style="background-color: aqua;" class="grid-1">Div 3 This is 300px div || display: grid;
+    grid-template-columns: 100px 100px 300px;</div>
   </div>
 
   <div class="grid-alignment-3">
     <div style="background-color: lightblue;" class="grid-1">Div 1 <p>it's only px value</p></div>
-    <div style="background-color: lightcoral;" class="grid-1">Div 2 for rf value
-    </div>
-    <div style="background-color: aqua;" class="grid-1">this is 300px div for rf value</div>
+    <div style="background-color: lightcoral;" class="grid-1">grid-template-columns: 100px 1fr 1fr;</div>
+    <div style="background-color: rgb(157, 28, 28);" class="grid-1">grid-template-columns: 100px 1fr 1fr; || Div 3 for rf value</div>
+    <div style="background-color: aqua;" class="grid-1">over wrap</div>
   </div>
   <div class="grid-alignment-4">
     <div style="background-color: lightblue;" class="grid-1">Div 1 <p>it's only px value</p>
     </div>
-    <div style="background-color: lightcoral;" class="grid-1">Div 2 for rf value
-    </div>
+    <div style="background-color: lightcoral;" class="grid-1">grid-template-columns: 100px 1fr 1fr; ||Div 2 for rf value</div>
     <div style="background-color: aqua;" class="grid-1">this is 300px div for rf value</div>
     <div style="background-color: rgb(20, 118, 118);" class="grid-1">this div is <strong>wrap</strong></div>
     <div style="background-color: rgb(213, 229, 229);" class="grid-1">this div is <strong>wrap</strong></div>
+  </div>
+
+  <div class="grid-alignment-5">
+    <div style="background-color: rgb(35, 172, 218);" class="grid-1">Div 1 || display: grid;
+      grid-template-columns: 300px 1fr 2fr;</div>
+    <div style="background-color: lightcoral;" class="grid-1">Div 2 <p>|| display: grid;
+        grid-template-columns: 300px 1fr 2fr;</p>
+    </div>
+    <div style="background-color: rgb(4, 60, 60);" class="grid-1">Div 3 This is 300px div || display: grid;
+      grid-template-columns: 300px 1fr 2fr;</div>
   </div>
 </body>
 </html>
