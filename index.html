@@ -13,80 +13,55 @@
 
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/common.css">
+  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/video-details.css">
 </head>
 <style>
-  body{
-    /* margin: 0; */
-    /* padding: 0; */
-  }
-  p{
-    margin: 0;
-    padding: 0;
-  }
-  .search-box{
-    display: block;
-  }
-  /* .single-video-preview{
-    display: inline-block;
-    width: 400px;
-    margin-right: 12px;
-    padding: 12px 0;
-  } */
   
-  .single-video-thumbnail{
-    /* width: 400px; */
-    width: 100%;
-    border-radius: 8px;
-  }
-  .author-profile-picture img{
-    /* width: 70px; */
-    /* height: 70px; */
-    /* width: 100%;
-    border-radius: 50%; */
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-    
-  }
-  .video-title{
-    margin-top: 0;
-    font-family: roboto, Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-  }
-  .single-video-info{
-    margin-top: 12px;
-  }
-  .video-author, .video-status{
-    font-family: roboto, Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-    font-weight: 500;
-    padding: 4px 0;
-    color: rgb(96, 96, 96);
-    margin: 0;
-  }
-  /* .video-status{
-    font-family: roboto, Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-    padding: 2px;
-    margin: 0;
-  } */
-   .video-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* grid-gap: 16px; */
-    column-gap: 16px;
-    row-gap: 16px;  
+   .main-header{
+    display: flex;
+    flex-direction: row;
+    height: 70px;
    }
-   .single-video-info{
-    display: grid;
-    grid-template-columns: 100px 1fr;
+   .header-left{
+    background-color: aqua;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .header-middle{
+    background-color: lightcoral;
+    flex: 1;
+    margin: 0 40px;
+    /* min-width: 500px; */
+   }
+   .header-right{
+    background-color: lightgreen;
+    width: 350px;
+   }
+   .humbargar-menu{
+    height: 30px;
+   }
+   .youtube-logo{
+    height: 30px;
+    margin-left: 16px;
    }
 </style>
 <body>
-  <input class="search-box" type="text" placeholder="Search">
+  <div class="main-header">
+    <div class="header-left">
+      <img src="icon/menu.png" alt="" class="humbargar-menu">
+      <img src="icon/youtubelogo.png" alt="" class="youtube-logo">
+    </div>
+    <div class="header-middle">
+      <input class="search-box" type="text" placeholder="Search">
+    </div>
+    <div class="header-right">
+      header Right
+    </div>
+  </div>
   <div class="video-grid">
     <div class="single-video-preview">
       <div class="video-thumbnail">
