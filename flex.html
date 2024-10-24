@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FlexBox</title>
+  <style>
+    .image-height img{
+      height: 100%;
+      width: auto;
+    }
+  </style>
 </head>
 <body>
   <div style="
@@ -96,29 +102,33 @@
     </div>
   </div>
   <div style="
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  ">
-    <div style="
-            background-color: lightcoral;
-            width: 200px;
-            height: 100px;
-            
-            ">Div 1 200px</div>
-    <div style="
-            background-color: rgb(14, 139, 49);
-            width: 200px;
-            height: 60px;
-            ">Div 2 200px</div>
-    <div style="
-            background-color: rgb(48, 14, 217);
-            width: 300px;
-            height: 80px;
-            ">Div 3 200px</div>
-    </div>
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;   /* left to right spacing in command */
+              align-items: center; /* Top to Bottom spacing in command */
+              text-align: center; /* left to right spacing in command */
+              ">
+          <div style="
+              background-color: lightcoral;
+              width: 200px;
+              height: 100px;
+              
+              ">Div 1 200px
+            </div>
+          <div style="
+              background-color: rgb(14, 139, 49);
+              width: 200px;
+              height: 60px;
+              ">Div 2 200px
+            </div>
+          <div class="image-height" style="
+              background-color: rgb(48, 14, 217);
+              flex: 1;
+              height: 80px;
+              ">
+              <img src="profile/Sakib-Khan-Bangladesh.jpg" alt="">
+            </div>
+  </div>
   </div>
   
 </body>

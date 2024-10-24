@@ -1,0 +1,71 @@
+.main-header{
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: white;
+    /* border-bottom: 1px solid gray; */
+   }
+   .header-left{
+    /* background-color: aqua; */
+    /* width: 150px ; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+   }
+   .humbargar-menu{
+    height: 30px;
+   }
+   .youtube-logo{
+    height: 30px;
+    margin-left: 16px;
+   }
+   .header-middle{
+    display: flex;
+    /* background-color: lightcoral; */
+    flex: 1;
+    margin: 0 40px;
+    align-items: center;
+    justify-content: space-around;
+    /* min-width: 500px; */
+   }
+
+   .search-box{ 
+    flex: 1;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px 0.05;
+    width: 0;
+    
+   }
+   .search-box::placeholder{
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 8px;
+    font-family: roboto,Arial, Helvetica, sans-serif;
+   }
+   .search-icon{
+    width: 64px;
+    height:44px;
+    border: 1px solid gray;
+    background-color: rgb(240, 237, 237);
+    margin-left: -1px;
+    margin-right: 8px;
+   }
+   .voice-icon{
+    width: 44px;
+    height:44px;
+    border-radius: 22px;
+    border: none;
+   }
+   .search-icon-height {
+    height: 24px;
+   }
+   .voice-icon-height{
+    height: 24px;
+   }

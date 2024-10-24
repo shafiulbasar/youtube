@@ -19,35 +19,37 @@
 </head>
 <style>
   
-   .main-header{
+   
+   .header-right{
+    /* background-color: lightgreen; */
+    width: 250px;
     display: flex;
     flex-direction: row;
-    height: 70px;
-   }
-   .header-left{
-    background-color: aqua;
-    /* width: 150px ; */
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin-right: 26px;
+    flex-shrink: 0;
    }
-   .header-middle{
-    background-color: lightcoral;
-    flex: 1;
-    margin: 0 40px;
-    /* min-width: 500px; */
+   .upload-video, .nine-dots, .notification, .profile-picture{
+    width: 44px;
+    height:44px;
+    border: none;
+    background-color: white;
+    
    }
-   .header-right{
-    background-color: lightgreen;
-    width: 350px;
+   .profile-picture{
+    border: none;
+    background-color: white;
    }
-   .humbargar-menu{
-    height: 30px;
+  .all-right-itme{
+    height: 24px;
+  }
+   .all-right-itme-profile{
+    height: 40px;
+    border-radius: 20px;
+    border: none;
    }
-   .youtube-logo{
-    height: 30px;
-    margin-left: 16px;
-   }
+   
 </style>
 <body>
   <div class="main-header">
@@ -57,9 +59,26 @@
     </div>
     <div class="header-middle">
       <input class="search-box" type="text" placeholder="Search">
+      <button class="search-icon">
+        <img class="search-icon-height" src="icon/search-interface-symbol.png" alt="#">
+      </button>
+      <button class="voice-icon">
+        <img class="voice-icon-height" src="icon/microphone.png" alt="#">
+      </button>
     </div>
     <div class="header-right">
-      header Right
+      <button class="upload-video">
+        <img class="all-right-itme" src="icon/video-call.png" alt="">
+      </button>
+      <button class="nine-dots">
+        <img class="all-right-itme" src="icon/dots-menu.png" alt="">
+      </button>
+      <button class="notification">
+        <img class="all-right-itme" src="icon/notification.png" alt="">
+      </button>
+      <button  class="profile-picture">
+        <img class="all-right-itme-profile" src="icon/01.png" alt="">
+      </button>
     </div>
   </div>
   <div class="video-grid">
